@@ -1,0 +1,5 @@
+Go to html5 tools , CORS exploiter ,
+Enter the plynt test URL for this test case.
+
+See if it allow you to retrive the page in response.
+Look for origin and header as mentioned .

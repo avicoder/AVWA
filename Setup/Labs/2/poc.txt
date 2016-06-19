@@ -1,0 +1,8 @@
+# Register yourself.
+# Go to forget password page.
+# Enter victim Email password.
+# GO to newpass.php 
+# reset his password now.
+
+newpass.php page just check ,is the user entered email address in database or not ? and set the session variable $email to
+attacker's choice email address which ultimately allows to reset the password of victim account.

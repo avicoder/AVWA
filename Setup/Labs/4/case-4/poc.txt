@@ -1,0 +1,13 @@
+#Open Chrome
+#Register yourself
+#Login to your account 
+#Open Inspect element 
+#Look for resource tab and click on session/local storage.
+#Logout/ close the browser
+#Open browser again , go to the application and look for the saved values in Local storage.
+  
+
+
+If it wont save the data user this application.
+
+/old/4/4.3/index.php

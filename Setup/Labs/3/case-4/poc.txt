@@ -1,0 +1,13 @@
+Username: Payload {}*{xss:expression(open(alert(1337)))}
+Password: 1
+
+
+go to profile.php in IE
+
+append "/" after url and reload the page.
+
+for more info : spanner.co.uk , or search Relative path overwrite .
+
+
+It this wont work use this :
+plynttest.web44.net/Old/3/RPO/

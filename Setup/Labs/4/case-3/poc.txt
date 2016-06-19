@@ -1,0 +1,1 @@
+Look for files like index.bak,top.bak etc.. and the open sourcecode to see server side php code.

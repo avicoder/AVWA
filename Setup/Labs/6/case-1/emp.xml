@@ -1,0 +1,32 @@
+<Employees>
+ <Employee ID="1">
+    <FirstName>Ram</FirstName>
+    <LastName>Mohan</LastName>
+    <UserName>rmohan</UserName>
+    <Password>test123</Password>
+    <Type>Admin</Type>
+  </Employee>
+  <Employee ID="2">
+    <FirstName>suraj</FirstName>
+    <LastName>kumar</LastName>
+    <UserName>skumar</UserName>
+    <Password>demopass</Password>
+    <Type>User</Type>
+  </Employee>
+  <Employee ID="3">
+    <FirstName>jai</FirstName>
+    <LastName>singh</LastName>
+    <UserName>jsingh</UserName>
+    <Password>JSRocks!</Password>
+    <Type>User</Type>
+  </Employee>
+  <Employee ID="4">
+    <FirstName>gabbar</FirstName>
+    <LastName>singh</LastName>
+    <UserName>gsingh</UserName>
+    <Password>basanti</Password>
+    <Type>Admin</Type>
+  </Employee>
+</Employees>
+
+

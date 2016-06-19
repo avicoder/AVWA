@@ -1,0 +1,17 @@
+User1 
+ID: 12345678
+password: password
+
+user2
+ID: 87654321
+password: password2
+
+populated parameter -->  userid
+
+test case:
+
+after login as user1, money get deducted from user2 account because of provided userid=87654321
+
+
+http://127.0.0.1/Labs/8/profile.php?amount=1000&account=87654321&transact=true&userid=87654321
+

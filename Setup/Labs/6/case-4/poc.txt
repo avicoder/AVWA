@@ -1,0 +1,4 @@
+
+' or substring(name(parent::*[position()=1]),1,1)='E
+
+' or substring(name(parent::*[position()=1]),2,1)='m

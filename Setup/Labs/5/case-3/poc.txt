@@ -1,0 +1,2 @@
+ping google.com > pingresponse.txt
+open the test case and type pingresponse.txt to see the saved file.

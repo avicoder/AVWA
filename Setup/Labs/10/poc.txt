@@ -1,0 +1,3 @@
+Click on send message button,
+for more information : see the code here http://codepen.io/anon/pen/eNvYQV
+and modify the xss payload with your choice in JS tab !

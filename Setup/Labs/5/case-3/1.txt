@@ -1,0 +1,11 @@
+
+Pinging 173.1.66.82 with 32 bytes of data:
+Reply from 173.1.66.82: bytes=32 time=424ms TTL=115
+Reply from 173.1.66.82: bytes=32 time=414ms TTL=115
+Reply from 173.1.66.82: bytes=32 time=429ms TTL=115
+Reply from 173.1.66.82: bytes=32 time=426ms TTL=115
+
+Ping statistics for 173.1.66.82:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 414ms, Maximum = 429ms, Average = 423ms

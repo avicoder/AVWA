@@ -1,0 +1,13 @@
+This application is not vulnerable one .
+
+It is developed for the purpose to understand how sessions are used in websocket transmission.
+
+for example:
+
+#Enter a name1 in handle test box. after 2-3 min you will get into the chat room 
+#open private windoe and do the same thing as step 1 with different handle say name2.
+#in burp proxy look for upgrade 101 in websocket along with a json auth response from the pusherapp(websocket server).
+#this auth json is used in each subsequent websocket request from the user to authentication.(websocket app).
+
+Note: sometimes this application will take time to connect to chat room . But it works.
+

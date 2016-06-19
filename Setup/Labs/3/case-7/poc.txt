@@ -1,0 +1,1 @@
+127.0.0.1/Labs/3/case-7/xss.swf?a=location&c=https://google.com

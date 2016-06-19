@@ -1,0 +1,21 @@
+There are 3 type of roles:
+~Analyst
+~Manager
+~Admin
+
+#Analyst is the default role allocated after successful signup.
+#Analyst can only edit his phone number.
+
+++Case1++
+During signup append role=Admin in the GET query string
+
+++Case2++
+Manager can only delete Analyst seen from the dropdown .
+change that analyst name to admin/manager username and it will get deleted.
+
+++Case3++ 
+Admin can only create Analyst/Manager but not anather admin.
+Intercept the request and change the role .
+
+
+Most cases are kind  of tampering the value sent to the server .
