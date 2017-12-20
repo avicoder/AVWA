@@ -1,13 +1,21 @@
 # AVWA
-Another Vulnerable Web Application
+
+**Another Vulnerable Web Application**
+
+[![made-with-python](https://img.shields.io/badge/Made%20with-PHP-1f425f.svg)](https://www.php.org/)  [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/vjex/AVWA/graphs/commit-activity)  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+
+
 A vulnerable web application focussed on learning obscure and web 2.0 vulnerabilities
+
 Following vulnerabilities are in scope
-1.) User credential enumeration
-2.) Session Puzzling
-3.) Xpath injection
-4.) XML injection
-5.) HTTP Parameter Pollution
-6.) CORS exploitation
-7.) Web Message vulnerability
-8.) Web Socket Vulnerability
-9.) Privilege provisioning bypass
+
+  -  User credential enumeration
+  -  Session Puzzling
+  -   Xpath injection
+  -  XML injection
+  -   HTTP Parameter Pollution
+  -   CORS exploitation
+  -  Web Message vulnerability
+  -   Web Socket Vulnerability
+  -  Privilege provisioning bypass
